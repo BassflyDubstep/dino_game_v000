@@ -1,6 +1,6 @@
 import arcade
 
-def MainView(arcade.View):
+class MainView(arcade.View):
 
     def __init__(self):
         super().__init__()
@@ -9,11 +9,12 @@ def MainView(arcade.View):
         self.clear()
 
     def on_update(self, delta_time: float):
+        pass
 
     def on_show(self):
         arcade.set_background_color(arcade.color.ASH_GREY)
 
-def MainWindow(arcade.Window):
+class MainWindow(arcade.Window):
 
     def __init__(self, width, height, title):
         super().__init__(width, height, title)
